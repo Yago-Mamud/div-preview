@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Preview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Border Preview</h1>
+	</header>
+	<main>
+		<!-- OUTPUT CONTAINER -->
+		<div class="container">
+			<h1>Border</h1>
+			<p>Radius</p>
+			<label>Top Left</label>
+			<input id="TopLeft" class="borderSlider" type="range" min="0" max="360" value="0"/>
+			<label>Bottom Left</label>
+			<input id="BottomLeft" class="borderSlider" type="range" min="0" max="360" value="0"/>
+			<label>Top Right</label>
+			<input id="TopRight" class="borderSlider" type="range" min="0" max="360" value="0"/>
+			<label>Bottom Right</label>
+			<input id="BottomRight" class="borderSlider" type="range" min="0" max="360" value="0"/>
+			<!---->
+			<p>Colors</p>
+			<label>Red</label>
+			<input id="red" class="colorSlider" type="range" min="0" max="255" value="0"/>
+			<label>Green</label>
+			<input id="green" class="colorSlider" type="range" min="0" max="255" value="0"/>
+			<label>Blue</label>
+			<input id="blue" class="colorSlider" type="range" min="0" max="255" value="0"/>
+			<!---->
+			<p>Border Thickness</p>
+			<input id="thickness" type="range" min="1" max="50" value="0"/>
+		</div>
+		<!-- OUTPUT CONTAINER -->
+		<div class="container output">
+			<div id="toBeModded"></div>
+		</div>
+	</main>
+<script src="scripts.js">
+</script>
+</body>
+</html>
