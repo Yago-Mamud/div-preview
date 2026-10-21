@@ -5,6 +5,8 @@ borders.forEach((slider) => {
 		let input = slider.value;
 		let a = "border"+slider.id+"Radius"
 		modded.style[a] = input + "px";
+		let show = document.getElementById("show"+slider.id);
+		show.innerText = slider.value;
 	});
 });
 
@@ -15,6 +17,8 @@ colorSliders.forEach((current) => {
 		let green = document.getElementById("green").value;
 		let blue = document.getElementById("blue").value;
 		modded.style.borderColor = `rgb(${red},${green},${blue})`;
+		let show = document.getElementById("show"+current.id);
+		show.innerText = current.value;
 	});
 });
 
@@ -22,4 +26,6 @@ const thick = document.getElementById("thickness");
 thick.addEventListener("input", () => {
 	let thickness = thick.value;
 	modded.style.borderWidth = thickness + "px";
+	let show = document.getElementById("showthickness");
+	show.innerText = thickness;
 });
